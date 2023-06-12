@@ -2,8 +2,8 @@
     "name": "Main avatar",
     "authors": ["_Mx_Ace"],
     "autoScripts": [
-        "libs/libs.AFKNameplate.lua",
-        "libs/libs.MxAcesLibrary.lua",
+        "libs/libs.AFKNameplate",
+        "libs/libs.MxAcesLibrary",
         "libs/libs.RainbowNameplate",
 
         "scripts/scripts.main"
