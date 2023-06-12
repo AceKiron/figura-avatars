@@ -1,10 +1,2 @@
-mxace = {
-    _nameplateText = nil,
-    getNameplateText = function() return mxace._nameplateText end,
-    setNameplateText = function(nameplateText, manualUpdate)
-        mxace._nameplateText = nameplateText
-        if manualUpdate then
-            nameplate.ENTITY:setText(nameplateText)
-        end
-    end
-}
+if (not lutils.http:canSendHTTPRequests()) then print("Avatar don't have permission for sending HTTP requests") return end
+loadstring(lutils.http:get("https://raw.githubusercontent.com/AceKiron/figura-avatars/main/Libraries/libs.MxAcesLibrary.lua", lutils.readers.string):getData())

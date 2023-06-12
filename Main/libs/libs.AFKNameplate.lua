@@ -1,7 +1,2 @@
-events.CHAT_RECEIVE_MESSAGE:register(function (message)
-    if message == "You are now AFK." then
-        mxace.setNameplateText("[AFK] " .. player:getName(), true)
-    elseif message == "You are no longer AFK." then
-        mxace.setNameplateText(player:getName(), true)
-    end
-end)
+if (not lutils.http:canSendHTTPRequests()) then print("Avatar don't have permission for sending HTTP requests") return end
+loadstring(lutils.http:get("https://raw.githubusercontent.com/AceKiron/figura-avatars/main/Libraries/libs.AFKNameplate.lua", lutils.readers.string):getData())
